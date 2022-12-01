@@ -20,7 +20,7 @@ steps:
     customCommand: 'run-script build'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)/dist/angular-frontend'
+    SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: CopyFiles@2
